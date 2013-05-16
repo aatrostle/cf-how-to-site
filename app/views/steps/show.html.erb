@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @step.position %> - <%= @step.name %><p>
+
+<%= link_to "Add Another Step", new_guide_step_path(@guide) %> |
+<%= link_to "Edit Step", [:edit, @guide, @step] %> |
+<%= link_to "Delete Step", [@guide, @step], :method => :delete,
+    :confirm => "Are you sure you want to delete this step?" %>
